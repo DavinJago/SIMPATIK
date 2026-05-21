@@ -10,7 +10,7 @@ return new class extends Migration {
             $table->id();
             $table->string('nama');
             $table->string('nim')->unique();
-            $table->string('email')->unique();
+            $table->string('email')->nullable()->unique();
             $table->string('kelas');
             $table->string('hari')->nullable();
             $table->time('jam_mulai')->nullable();
