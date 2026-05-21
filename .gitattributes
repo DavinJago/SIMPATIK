@@ -1,0 +1,17 @@
+* text=auto eol=lf
+
+*.blade.php diff=html
+*.blade.php linguist-language=HTML
+*.css diff=css
+*.html diff=html
+*.md diff=markdown
+*.php diff=php
+
+/vendor/** linguist-vendored
+/node_modules/** linguist-vendored
+/public/build/** linguist-vendored
+/storage/** linguist-vendored
+
+/.github export-ignore
+CHANGELOG.md export-ignore
+.styleci.yml export-ignore
