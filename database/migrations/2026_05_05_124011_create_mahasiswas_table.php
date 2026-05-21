@@ -6,16 +6,20 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration {
     public function up(): void {
-        Schema::table('mahasiswas', function (Blueprint $table) {
-            $table->string('hari')->nullable()->after('kelas');
-            $table->time('jam_mulai')->nullable()->after('hari');
-            $table->time('jam_selesai')->nullable()->after('jam_mulai');
+        Schema::create('mahasiswas', function (Blueprint $table) {
+            $table->id();
+            $table->string('nama');
+            $table->string('nim')->unique();
+            $table->string('email')->unique();
+            $table->string('kelas');
+            $table->string('hari')->nullable();
+            $table->time('jam_mulai')->nullable();
+            $table->time('jam_selesai')->nullable();
+            $table->timestamps();
         });
     }
 
     public function down(): void {
-        Schema::table('mahasiswas', function (Blueprint $table) {
-            $table->dropColumn(['hari', 'jam_mulai', 'jam_selesai']);
-        });
+        Schema::dropIfExists('mahasiswas');
     }
 };
