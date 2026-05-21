@@ -61,8 +61,7 @@ npm run dev
 http://127.0.0.1:8000
 ```
 
-## License
+### License
 
-MAS AMBA HITAM LEGAM
 This project is licensed for personal and non-commercial use only.
 Commercial use requires permission from the author.
