@@ -65,3 +65,9 @@ http://127.0.0.1:8000
 
 This project is licensed for personal and non-commercial use only.
 Commercial use requires permission from the author.
+
+![Dashboard](screenshots/dashboard.png)
+![Bank Soal](screenshots/bank.png)
+![Home](screenshots/home.png)
+![Nilai](screenshots/nilai.png)
+![Jadwal](screenshots/jadwal.png)
