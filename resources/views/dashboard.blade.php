@@ -45,16 +45,19 @@
 
             <div class="my-3 border-t border-zinc-300"></div>
 
-            <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-zinc-500 hover:bg-zinc-200 hover:text-zinc-800 transition-all">
-                <img src="{{ asset('images/Pintu.png') }}" 
-                alt="Keluar" 
-                class="shrink-0 object-contain opacity-60"
-                style="width: 20px; height: 20px;">
-                Keluar
-            </a>
+            <form method="POST" action="{{ route('logout') }}" class="w-full">
+                @csrf
+                <button type="submit" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-zinc-500 hover:bg-zinc-200 hover:text-zinc-800 transition-all border-none bg-transparent cursor-pointer">
+                    <img src="{{ asset('images/Pintu.png') }}" 
+                    alt="Keluar" 
+                    class="shrink-0 object-contain opacity-60"
+                    style="width: 20px; height: 20px;">
+                    Keluar
+                </button>
+            </form>
 
             <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-zinc-500 hover:bg-zinc-200 hover:text-zinc-800 transition-all">
-                <img src="{{ asset('images/Settings.png') }}" 
+                <img src="{{ asset('images/Settings-black.png') }}" 
                 alt="Pengaturan" 
                 class="shrink-0 object-contain opacity-60"
                 style="width: 20px; height: 20px;">

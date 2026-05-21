@@ -35,4 +35,4 @@ Route::get('/dashboard', function () {
 })->name('dashboard');
 
 Route::post('/login', [AuthController::class, 'checkLogin'])->name('login.check');
-
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
